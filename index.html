@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chelka Bank | Votre finance en mouvement</title>
+    <meta
+      name="description"
+      content="Banque moderne qui accompagne vos projets grâce à des services financiers simples et sécurisés."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-mark">C</div>
+          <span>Chelka</span>
+        </div>
+
+        <nav class="nav-links" aria-label="navigation principale">
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#mouvements">Mouvements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary" href="#clients">Ouvrir un compte</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow">Banque digitale</span>
+            <h1>Des solutions financières souples et sécurisées.</h1>
+            <p>
+              Gagnez du temps avec une banque pensée pour les particuliers,
+              indépendants et PME, avec un accompagnement humain à chaque étape.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#services">Découvrir</a>
+              <a class="btn btn-secondary" href="#contact">Nous contacter</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="statistiques">
+              <li>
+                <strong>24K+</strong>
+                <span>clients actifs</span>
+              </li>
+              <li>
+                <strong>98%</strong>
+                <span>service client</span>
+              </li>
+              <li>
+                <strong>4.9/5</strong>
+                <span>avis</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="carte bancaire">
+            <div class="card-header">
+              <span class="chip"></span>
+              <span class="bank-name">Chelka Bank</span>
+            </div>
+            <div class="card-number">**** 4287</div>
+            <div class="card-footer">
+              <div>
+                <small>Propriétaire</small>
+                <strong>Client Premium</strong>
+              </div>
+              <div>
+                <small>Solde</small>
+                <strong>€ 24 860</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container" id="services">
+        <div class="section-heading">
+          <span class="eyebrow">Nos services</span>
+          <h2>Une expérience bancaire pensée pour votre quotidien</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">💳</div>
+            <h3>Comptes et cartes</h3>
+            <p>Gestion simple, sécurisée et accessible partout.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">📈</div>
+            <h3>Investissement</h3>
+            <p>Des solutions adaptées à vos objectifs de croissance.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Crédit immobilier</h3>
+            <p>Des financements flexibles pour votre projet de vie.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="clients container" id="clients">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="eyebrow">Nos clients</span>
+            <h2>Des profils variés, une relation humaine</h2>
+          </div>
+          <div id="apiStatus" class="status-badge" aria-live="polite">Chargement…</div>
+        </div>
+
+        <div id="clientsGrid" class="clients-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="transactions container" id="mouvements">
+        <div class="section-heading">
+          <span class="eyebrow">Derniers mouvements</span>
+          <h2>Suivi rapide et transparent</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Ville</th>
+                <th>Type</th>
+                <th>Montant</th>
+              </tr>
+            </thead>
+            <tbody id="transactionsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-content">
+        <div>
+          <div class="brand">
+            <div class="brand-mark">C</div>
+            <span>Chelka</span>
+          </div>
+          <p>Une banque moderne au service de vos ambitions.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#mouvements">Mouvements</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
