@@ -61,7 +61,7 @@ function renderUsers(users) {
           </div>
 
           <div>
-            <div class="client-city">📍 ${user.city}</div>
+            <div class="client-city"><i class="fa-solid fa-location-dot"></i> ${user.city}</div>
           </div>
 
           <div class="client-tags">

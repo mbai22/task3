@@ -1,17 +1,20 @@
 # Chelka Bank Frontend
 
-Interface web simple pour une banque vitrine, réalisée en HTML, CSS et JavaScript.
+## Présentation du projet
 
-## Objectif
+Ce projet consiste en une interface bancaire vitrine développée en HTML, CSS et JavaScript. Il a pour objectif de démontrer la consommation d’une API REST et l’affichage dynamique d’informations de clients dans une page moderne et responsive.
 
-Créer une page statique qui affiche des informations clients et des mouvements financiers récupérés depuis une API REST, avec un design responsive.
+## Objectif fonctionnel
 
-## Technologie utilisée
+La page présente une expérience utilisateur orientée banque digitale, avec une section d’introduction, une présentation des services, un bloc clients alimenté par une API, ainsi qu’un tableau des derniers mouvements financiers.
+
+## Technologies
 
 - HTML5
 - CSS3
 - JavaScript
 - Fetch API
+- Font Awesome
 
 ## Structure du projet
 
@@ -20,37 +23,26 @@ task03/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+├── rapport_presentation.md
+└── .gitignore
 ```
 
-## Fonctionnalités
+## Démarrage
 
-- Hero section marketing
-- Section de services
-- Affichage dynamique des clients depuis une API
-- Tableau des derniers mouvements
-- Mise en page responsive
-- Fallback local si l’API est inaccessible
-
-## Lancer le projet
-
-### Option 1 : via un serveur local simple
-
-Depuis le dossier du projet, exécutez :
+### Option 1 : serveur local simple
 
 ```bash
 npx serve
 ```
 
-Puis ouvrez l’URL affichée dans le terminal.
-
-### Option 2 : avec Python
+### Option 2 : Python
 
 ```bash
 python -m http.server 8000
 ```
 
-Ensuite ouvrez :
+Ensuite ouvrir :
 
 ```text
 http://localhost:8000
@@ -58,12 +50,18 @@ http://localhost:8000
 
 ## API utilisée
 
-Le projet utilise par défaut :
-
 ```text
 https://jsonplaceholder.typicode.com/users
 ```
 
-## Auteur
+## Points forts du projet
 
-Projet réalisé dans le cadre de la tâche 3 frontend.
+- Interface visuelle premium et moderne
+- Mise en page responsive
+- Chargement asynchrone des données
+- Comportement robuste avec fallback local
+- Présentation orientée soutenance et démonstration technique
+
+## Conclusion
+
+Ce projet met en valeur les bases du développement frontend, notamment la récupération et l’affichage de données en temps réel, tout en respectant une approche d’interface claire, élégante et professionnelle.

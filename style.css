@@ -1,14 +1,16 @@
 :root {
-  --bg: #f4f7fb;
-  --panel: #ffffff;
-  --primary: #0f5bd9;
-  --primary-dark: #0a3fa6;
-  --secondary: #1d2440;
-  --text: #122033;
-  --muted: #57657a;
-  --border: rgba(18, 32, 51, 0.08);
-  --success: #1fa66a;
-  --shadow: 0 20px 45px rgba(17, 29, 52, 0.1);
+  --bg: #f5f1ea;
+  --panel: #fffdf9;
+  --primary: #8d6e3f;
+  --primary-dark: #5b4326;
+  --secondary: #1f1b17;
+  --text: #1d1a17;
+  --muted: #625a52;
+  --border: rgba(29, 26, 23, 0.08);
+  --success: #2c7a5f;
+  --shadow: 0 22px 50px rgba(30, 22, 17, 0.12);
+  --gold: #d9b57d;
+  --gold-soft: rgba(217, 181, 125, 0.14);
 }
 
 * {
@@ -103,14 +105,14 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), #2b7ef7);
+  background: linear-gradient(135deg, var(--primary), #b6905f);
   color: #fff;
   padding: 0.9rem 1.4rem;
-  box-shadow: 0 12px 24px rgba(15, 91, 217, 0.22);
+  box-shadow: 0 12px 24px rgba(141, 110, 63, 0.22);
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
 }
 
@@ -193,13 +195,22 @@ img {
 
 .hero-card {
   position: relative;
-  background: linear-gradient(135deg, #132a4d, #1a3b70 42%, #0f5bd9 100%);
+  background: linear-gradient(135deg, #1d1a17, #382f26 42%, #8d6e3f 100%);
   border-radius: 28px;
   padding: 2rem;
   min-height: 300px;
   color: white;
   box-shadow: var(--shadow);
   overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover,
+.service-card:hover,
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 50px rgba(30, 22, 17, 0.12);
 }
 
 .hero-card::before {
@@ -286,8 +297,21 @@ section {
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background: rgba(15, 91, 217, 0.08);
-  font-size: 1.8rem;
+  background: var(--gold-soft);
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+}
+
+.client-city {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.client-city i {
+  color: var(--primary);
 }
 
 .service-card h3,
